@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    tools:context="com.example.silvia.silviasgame.MainActivity"
+    android:background="@drawable/bg2"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:paddingTop="5dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/user_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score: 0"
+        android:textColor="@color/pink"
+        android:textSize="20dp"
+        android:layout_weight="0.5"
+        />
+
+    <TextView
+        android:id="@+id/comp_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Score: 0"
+        android:layout_weight="0.5"
+        android:textSize="20dp"
+        android:textColor="@color/blue"/>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/game_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="Status: Game Start"
+        android:textSize="20sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/img_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:contentDescription="dice"
+        android:src="@drawable/dice1"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/roll_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="ROLL"
+            android:layout_weight="1"
+            android:background="@color/aa"
+            android:textColor="@color/white"
+
+            />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@color/aa"
+            android:textColor="@color/white"
+            android:text="RESET"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--- Created by Silvia"
+            android:textColor="@color/black"
+            android:layout_marginTop="220dp"
+            android:layout_gravity="end"
+            android:textSize="15dp"
+            />
+</LinearLayout>
